@@ -1,197 +1,86 @@
-<p align="center">
-  <a href="https://www.jamify.org">
-    <img alt="Jamify" src="https://avatars1.githubusercontent.com/u/66115190?s=200&v=4" />
-  </a>
-</p>
+<a href="https://chronoblog-profile.now.sh" target="_blank">
+<img src="https://github.com/Chronoblog/gatsby-theme-chronoblog/raw/master/assets/st-banner-profile.png" alt="Chronoblog - Gatsby Theme" />
+</a>
+
 <h1 align="center">
-  Jamify's blog starter <br/>
+Gatsby Starter Chronoblog Profile - starter for Chronoblog Gatsby Theme
 </h1>
 
-[![Released under MIT license.](https://badgen.net/github/license/micromatch/micromatch)](https://github.com/styxlab/gatsby-starter-try-ghost/blob/master/LICENSE)
-[![gatsby-starter-try-ghost npm package version.](https://badgen.net/npm/v/gatsby-starter-try-ghost)](https://www.npmjs.org/package/gatsby-starter-try-ghost)
+[![npm](https://img.shields.io/npm/v/gatsby-theme-chronoblog?color=brightgreen)](https://www.npmjs.com/package/gatsby-theme-chronoblog) [![node](https://img.shields.io/node/v/gatsby-theme-chronoblog)](https://www.npmjs.com/package/gatsby-theme-chronoblog)
 
-A [Gatsby](https://www.gatsbyjs.org/) starter for creating blogs from headless [Ghost CMS](https://ghost.org/changelog/jamstack/). 
+This starter will help you launch a personal website with a simple text feed on the main page. This starter looks simple and neat, but at the same time, it has great potential for organizing your content using tags, dates, and search.
 
-Turn your Ghost blog into a flaring fast static website. This Gatsby theme is a front-end replacement of the Ghost Handlebars engine featuring an enhanced Ghost Casper look and feel. All content is sourced from a headless Ghost CMS.
+The homepage is organized in compact feeds. The display of content in these feeds is based on the tags of this content (for example, only content with a `podcast` tag gets into the feed with podcasts).
 
-&nbsp;
+The starter is based on the Gatsby Theme Chronoblog.
 
-## 🎓 Tutorials
+What is a Chronoblog?
 
-Check out the [Tutorials](https://www.jamify.org) for practical guides on using this project.
+> Chronoblog is a Gatsby js theme specifically designed to create a personal website. The main idea of ​​Chronoblog is to allow you not only to write a personal blog but also to keep a record of everything important that you have done.
 
-&nbsp;
+Read more about Chronoblog Gatsby Theme here: [github.com/Chronoblog/gatsby-theme-chronoblog](https://github.com/Chronoblog/gatsby-theme-chronoblog)
 
-## 🎉 Demo
+**Live demo of this starter: [https://chronoblog-profile.now.sh](https://chronoblog-profile.now.sh/)**
 
->Play with the [Demo](https://demo.jamify.org/) to get a first impression.
+## Features
 
+- Specially designed to create a personal website (in a simple and strict "text" style)
+- Universal text feed divided into categories
+- Search and Tags for organizing content
+- A simple change of primary and secondary colors of the site, fonts, radius of curvature of elements, etc (thanks to Theme UI theming)
+- Clean and Universal UI
+- Mobile friendly, all elements and custom images are adapted to any screen
+- Light/Dark mode
+- Easy customization of icons and links to your social networks
+- MDX for the main menu of the site, footer and other elements of the site
+- MDX for pages and content
+- Code syntax highlighting
+- SEO (OpenGraph and Twitter) out of the box with default settings that make sense (thanks to React Helmet)
 
-[![gatsby-starter-try-ghost](https://static.gotsby.org/v1/assets/images/jamify-demo.png)](https://styxlab.github.io) 
+## How to start using Chronoblog Profile Starter
 
-&nbsp;
+If you have `gatsby-cli`:
 
-## ✨ Features
+```sh
+gatsby new chronoblog-site https://github.com/Chronoblog/gatsby-starter-chronoblog-profile
 
-- Ghost Casper look and feel
-- Images with [lazy-loading and blur-up effect](https://using-gatsby-image.gatsbyjs.org/) 🚀 🆕
-- Infinite Scroll ✨
-- Featured posts pinned on top 🆕
-- Sticky navigation headers
-- Hover on author avatar
-- Styled 404 page
-- SEO optimized
-- Fully responsive
-- Advanced routing 🆕
-- Composable and extensible
-- Incremental build enabled 🚀 🆕 
+cd chronoblog-site
 
-&nbsp;
-
-## 🚀 Performance
-
-![Lighthouse Score](https://static.gotsby.org/v1/assets/images/jamify-lighthouse.png)
-
-&nbsp;
-
-## 📦 Included Plugins
-
-The following plugins have been included for convenience:
-
-| Name | Version | Description |   
-| ---- | ------- | ----------- |
-| [`gatsby-theme-ghost-dark-mode`](https://github.com/styxlab/gatsby-theme-try-ghost/tree/master/packages/gatsby-theme-ghost-dark-mode) | [![version](https://badgen.net/npm/v/gatsby-theme-ghost-dark-mode)](https://www.npmjs.com/package/gatsby-theme-ghost-dark-mode) | Dark mode toggle 🌗 |
-| [`gatsby-rehype-ghost-links`](https://github.com/styxlab/gatsby-theme-try-ghost/tree/master/packages/gatsby-rehype-ghost-links) | [![version](https://badgen.net/npm/v/gatsby-rehype-ghost-links)](https://www.npmjs.com/package/gatsby-rehype-ghost-links) | Rewrite CMS links from absolute to relative |
-| [`gatsby-rehype-prismjs`](https://github.com/styxlab/gatsby-theme-try-ghost/tree/master/packages/gatsby-rehype-prismjs) | [![version](https://badgen.net/npm/v/gatsby-rehype-prismjs)](https://www.npmjs.com/package/gatsby-rehype-prismjs) | Syntax highlighting with [PrismJS](http://prismjs.com/) |
-| [`gatsby-theme-ghost-members`](https://github.com/styxlab/gatsby-theme-try-ghost/tree/master/packages/gatsby-theme-ghost-members) 🆕 | [![version](https://badgen.net/npm/v/gatsby-theme-ghost-members)](https://www.npmjs.com/package/gatsby-theme-ghost-members) | Member Subscriptions |
-
-
-If you don't need them, you can take them out in `gatsby-config.js` and `package.json` which may save you some time during the build process.
-
-&nbsp;
-
-## 🔥 More Plugins
-
-Additional features can be integrated by installing Gatsby themes or plugins. The following plugins have been tested to work with [`gatsby-starter-try-ghost`](https://github.com/styxlab/gatsby-starter-try-ghost):
-
-| Name | Version | Description |   
-| ---- | ------- | ----------- |
-| [`gatsby-rehype-inline-images`](https://github.com/styxlab/gatsby-theme-try-ghost/tree/master/packages/gatsby-rehype-inline-images) 🆕 | [![version](https://badgen.net/npm/v/gatsby-rehype-inline-images)](https://www.npmjs.com/package/gatsby-rehype-inline-images) | Lazy-loading inline images with blur-up |
-| [`gatsby-theme-ghost-contact`](https://github.com/styxlab/gatsby-theme-try-ghost/tree/master/packages/gatsby-theme-ghost-contact) | [![version](https://badgen.net/npm/v/gatsby-theme-ghost-contact)](https://www.npmjs.com/package/gatsby-theme-ghost-contact) | Contact page |
-| [`gatsby-theme-ghost-commento`](https://github.com/styxlab/gatsby-theme-try-ghost/tree/master/packages/gatsby-theme-ghost-commento) | [![version](https://badgen.net/npm/v/gatsby-theme-ghost-commento)](https://www.npmjs.com/package/gatsby-theme-ghost-commento) | Commenting system with [Commento](https://commento.io/) |
-| [`gatsby-theme-ghost-toc`](https://github.com/styxlab/gatsby-theme-try-ghost/tree/master/packages/gatsby-theme-ghost-toc) 🆕 | [![version](https://badgen.net/npm/v/gatsby-theme-ghost-toc)](https://www.npmjs.com/package/gatsby-theme-ghost-toc) | Table of Contents |
-| [`gatsby-plugin-ackee-tracker`](https://github.com/burnsy/gatsby-plugin-ackee-tracker) | [![version](https://badgen.net/npm/v/gatsby-plugin-ackee-tracker)](https://www.npmjs.com/package/gatsby-plugin-ackee-tracker) | Site tracking with [Ackee](https://github.com/electerious/Ackee) |
-| [`gatsby-plugin-google-analytics`](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-google-analytics) | [![version](https://badgen.net/npm/v/gatsby-plugin-google-analytics)](https://www.npmjs.com/package/gatsby-plugin-google-analytics) | Site tracking with [Google Analytics](https://developers.google.com/analytics) |
-
-&nbsp;
-
-## 🏁 Getting Started
-
-1. Install this starter by running
-
-    ```bash
-    gatsby new try-ghost https://github.com/styxlab/gatsby-starter-try-ghost
-    ```
-
-2. Change directory
-
-    ```bash
-    cd try-ghost
-    ```
-
-3. Run
-
-    ```bash
-    gatsby develop
-    ```
-    and visit your site at `http://localhost:8000`.
-    
-&nbsp;
-
-## 💡 Configure
-
-```js
-    //siteConfig.js
-    module.exports = {
-        // Do not include a trailing slash!
-        siteUrl: `https://your-blog.com`,
-
-        // Maximum number of post shown per page
-        // Infinite Scroll: Initial chunk of posts, subsequent posts are fetched one by one
-        postsPerPage: 3, 
-    
-        // This allows an alternative site title for meta data for pages.
-        siteTitleMeta: `Gatsby Starter Ghost CMS`, 
-
-        // This allows an site description for meta data for pages.
-        siteDescriptionMeta: `Turn your Ghost blog into a flaring fast static site with Gatsby`, 
-    
-        // Used for App and Offline manifest e.g. Mobile Home Screen
-        shortTitle: `Ghost`, 
-        siteIcon: `favicon.png`, 
-        backgroundColor: `#e9e9e9`,
-        themeColor: `#15171A`,
-
-        // Include Gatsby images for lazy loading and image optimizations (default: true)
-        gatsbyImages: true,
-
-        // Overwrite navigation menu (default: []), label is case sensitive
-        // overwriteGhostNavigation: [{ label: `Home`, url: `/` }],
-    }
+gatsby develop
 ```
 
-In the configuration shown above, the most important fields to be changed are `siteUrl`, `siteTitleMeta` and `siteDescriptionMeta`. Update at least those to fit your needs.
+Or using git clone:
 
-&nbsp;
+```sh
+git clone git@github.com:Ganevru/gatsby-starter-chronoblog-profile.git chronoblog-site
 
-## 🔑 Ghost Content API keys
+cd chronoblog-site
 
-All content is sourced from a Ghost CMS. By default, content is fetched from the demo location at `https://cms.gotsby.org`. Surely you want to source your own content. In your base directory `try-ghost`, add a new file `.ghost.json` that contains the following JSON structure:
+npm i
 
-```bash
-
-    {
-        "development": {
-            "apiUrl": "http://localhost:2368",
-            "contentApiKey": "9fccdb0e4ea5b572e2e5b92942"
-        },
-        "production": {
-            "apiUrl": "http://localhost:2368",
-            "contentApiKey": "9fccdb0e4ea5b572e2e5b92942"
-        }
-    }
+npm start
 ```
 
-Change the url and keys to match your own Ghost CMS Content API keys.
+Your site is now running at http://localhost:8000
 
-&nbsp;
+## Deploying
 
-## 🤯 Ensure headless mode of Ghost CMS
+### Deploying to ZEIT Now
 
-For best SEO results it is strongly recommended to disable the default Ghost Handlebars theme front-end by selecting the *Make this site private* flag within your Ghost admin settings. This enables password protection in front of the Ghost install and sets `<meta name="robots" content="noindex" />` so your Gatsby front-end becomes the authoritative source for search engines.
+Gatsby Docs: [www.gatsbyjs.org/docs/deploying-to-zeit-now](https://www.gatsbyjs.org/docs/deploying-to-zeit-now/)
 
-&nbsp;
+Quick Deployment:
 
-## 💫 Deploy
+[![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/new/project?template=https://github.com/Chronoblog/gatsby-starter-chronoblog-profile)
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/styxlab/gatsby-starter-try-ghost)
+### Deploying to Netlify
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/styxlab/gatsby-starter-try-ghost)
+Gatsby Docs: [www.gatsbyjs.org/docs/deploying-to-netlify](https://www.gatsbyjs.org/docs/deploying-to-netlify/)
 
-&nbsp;
+Quick Deployment:
 
-## 💣 Reporting issues
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Chronoblog/gatsby-starter-chronoblog-profile)
 
-Please report all bugs and issues at [gatsby-theme-try-ghost/issues](https://github.com/styxlab/gatsby-theme-try-ghost/issues) as all development is happening there.
+## More information
 
-&nbsp;
-
-## 🧐 Disclaimer
-
-This project is not affiliated with [`gatsby-starter-ghost`](https://github.com/TryGhost/gatsby-starter-ghost) or [Ghost](https://ghost.org/).
-
-&nbsp;
-
-# Copyright & License
-
-Copyright (c) 2020 styxlab - Released under the [MIT license](LICENSE).
+For complete information, go to the main repository: [github.com/Chronoblog/gatsby-theme-chronoblog](https://github.com/Chronoblog/gatsby-theme-chronoblog)

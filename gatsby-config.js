@@ -1,104 +1,86 @@
-const path = require(`path`)
-
-let siteConfig
-let ghostConfig
-let mediaConfig
-let routesConfig
-
-try {
-    siteConfig = require(`./siteConfig`)
-} catch (e) {
-    siteConfig = null
-}
-
-try {
-    mediaConfig = require(`./mediaConfig`)
-} catch (e) {
-    mediaConfig = null
-}
-
-try {
-    routesConfig = require(`./routesConfig`)
-} catch (e) {
-    routesConfig = null
-}
-
-try {
-    ghostConfig = require(`./.ghost`)
-} catch (e) {
-    ghostConfig = {
-        development: {
-            apiUrl: process.env.GHOST_API_URL,
-            contentApiKey: process.env.GHOST_CONTENT_API_KEY,
-        },
-        production: {
-            apiUrl: process.env.GHOST_API_URL,
-            contentApiKey: process.env.GHOST_CONTENT_API_KEY,
-        },
-    }
-} finally {
-    const { apiUrl, contentApiKey } = process.env.NODE_ENV === `development` ? ghostConfig.development : ghostConfig.production
-
-    if (!apiUrl || !contentApiKey || contentApiKey.match(/<key>/)) {
-        ghostConfig = null //allow default config to take over
-    }
-}
-
 module.exports = {
-    plugins: [
-        `gatsby-plugin-preact`,
-        `gatsby-plugin-netlify`,
-        {
-            resolve: `gatsby-source-filesystem`,
-            options: {
-                path: path.join(__dirname, `src`, `images`),
-                name: `images`,
-            },
+  siteMetadata: {
+    siteTitle: "Howl History",
+    siteDescription:
+      "A journey through the tortured past of the Minnesota Timberwolves.",
+    siteImage: "/banner.png", // main image of the site for metadata
+    siteUrl: "https://chronoblog-profile.now.sh/",
+    pathPrefix: "/",
+    siteLanguage: "en",
+    ogLanguage: `en_US`,
+    author: "Howl History", // for example - 'Ivan Ganev'
+    authorDescription:
+      "A journey through the tortured past of the Minnesota Timberwolves.", // short text about the author
+    avatar: "/avatar.jpg",
+    twitterSite: "", // website account on twitter
+    twitterCreator: "", // creator account on twitter
+    social: [
+      {
+        icon: `envelope`,
+        url: `mailto:mymail@mail.com`
+      },
+      {
+        icon: `twitter`,
+        url: `https://twitter.com/ganevru`
+      },
+      {
+        icon: `github`,
+        url: `https://github.com/Chronoblog/gatsby-theme-chronoblog`
+      },
+      {
+        icon: `node-js`,
+        url: `https://www.npmjs.com/package/gatsby-theme-chronoblog`
+      }
+    ]
+  },
+  plugins: [
+    {
+      resolve: "gatsby-theme-chronoblog",
+      options: {
+        uiText: {
+          // ui text fot translate
+          feedShowMoreButton: "show more",
+          feedSearchPlaceholder: "search",
+          cardReadMoreButton: "read more →",
+          allTagsButton: "all tags"
         },
-        {
-            resolve: `gatsby-theme-try-ghost`,
-            options: {
-                ghostConfig: ghostConfig,
-                siteConfig: siteConfig,
-                mediaConfig: mediaConfig,
-                routes: routesConfig,
-            },
+        feedItems: {
+          // global settings for feed items
+          limit: 50,
+          yearSeparator: false,
+          yearSeparatorSkipFirst: true,
+          contentTypes: {
+            links: {
+              beforeTitle: "🔗 "
+            }
+          }
         },
-        {
-            resolve: `gatsby-theme-ghost-dark-mode`,
-            options: {
-                // Set to true if you want your theme to default to dark mode (default: false)
-                // Note that this setting has an effect only, if
-                //    1. The user has not changed the dark mode
-                //    2. Dark mode is not reported from OS
-                defaultModeDark: false,
-                // If you want the defaultModeDark setting to take precedence
-                // over the mode reported from OS, set this to true (default: false)
-                overrideOS: false,
-            },
-        },
-        {
-            resolve: `gatsby-theme-ghost-members`,
-        },
-        {
-            resolve: `gatsby-transformer-rehype`,
-            options: {
-                filter: node => (
-                    node.internal.type === `GhostPost` ||
-                    node.internal.type === `GhostPage`
-                ),
-                plugins: [
-                    {
-                        resolve: `gatsby-rehype-ghost-links`,
-                    },
-                    {
-                        resolve: `gatsby-rehype-prismjs`,
-                    },
-                ],
-            },
-        },
-        // this (optional) plugin enables Progressive Web App + Offline functionality
-        // This plugin is currently causing issues: https://github.com/gatsbyjs/gatsby/issues/25360
-        //`gatsby-plugin-offline`,
-    ],
+        feedSearch: {
+          symbol: "🔍"
+        }
+      }
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Chronoblog Gatsby Theme`,
+        short_name: `Chronoblog`,
+        start_url: `/`,
+        background_color: `#fff`,
+        theme_color: `#3a5f7d`,
+        display: `standalone`,
+        icon: `src/assets/favicon.png`
+      }
+    },
+    {
+      resolve: `gatsby-plugin-sitemap`
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        // replace "UA-XXXXXXXXX-X" with your own Tracking ID
+        trackingId: "UA-XXXXXXXXX-X"
+      }
+    }
+  ]
 }
