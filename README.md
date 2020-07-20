@@ -1,99 +1,197 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
+  <a href="https://www.jamify.org">
+    <img alt="Jamify" src="https://avatars1.githubusercontent.com/u/66115190?s=200&v=4" />
   </a>
 </p>
 <h1 align="center">
-  Gatsby's default starter
+  Jamify's blog starter <br/>
 </h1>
 
-Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+[![Released under MIT license.](https://badgen.net/github/license/micromatch/micromatch)](https://github.com/styxlab/gatsby-starter-try-ghost/blob/master/LICENSE)
+[![gatsby-starter-try-ghost npm package version.](https://badgen.net/npm/v/gatsby-starter-try-ghost)](https://www.npmjs.org/package/gatsby-starter-try-ghost)
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
+A [Gatsby](https://www.gatsbyjs.org/) starter for creating blogs from headless [Ghost CMS](https://ghost.org/changelog/jamstack/). 
 
-## 🚀 Quick start
+Turn your Ghost blog into a flaring fast static website. This Gatsby theme is a front-end replacement of the Ghost Handlebars engine featuring an enhanced Ghost Casper look and feel. All content is sourced from a headless Ghost CMS.
 
-1.  **Create a Gatsby site.**
+&nbsp;
 
-    Use the Gatsby CLI to create a new site, specifying the default starter.
+## 🎓 Tutorials
 
-    ```shell
-    # create a new Gatsby site using the default starter
-    gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
+Check out the [Tutorials](https://www.jamify.org) for practical guides on using this project.
+
+&nbsp;
+
+## 🎉 Demo
+
+>Play with the [Demo](https://demo.jamify.org/) to get a first impression.
+
+
+[![gatsby-starter-try-ghost](https://static.gotsby.org/v1/assets/images/jamify-demo.png)](https://styxlab.github.io) 
+
+&nbsp;
+
+## ✨ Features
+
+- Ghost Casper look and feel
+- Images with [lazy-loading and blur-up effect](https://using-gatsby-image.gatsbyjs.org/) 🚀 🆕
+- Infinite Scroll ✨
+- Featured posts pinned on top 🆕
+- Sticky navigation headers
+- Hover on author avatar
+- Styled 404 page
+- SEO optimized
+- Fully responsive
+- Advanced routing 🆕
+- Composable and extensible
+- Incremental build enabled 🚀 🆕 
+
+&nbsp;
+
+## 🚀 Performance
+
+![Lighthouse Score](https://static.gotsby.org/v1/assets/images/jamify-lighthouse.png)
+
+&nbsp;
+
+## 📦 Included Plugins
+
+The following plugins have been included for convenience:
+
+| Name | Version | Description |   
+| ---- | ------- | ----------- |
+| [`gatsby-theme-ghost-dark-mode`](https://github.com/styxlab/gatsby-theme-try-ghost/tree/master/packages/gatsby-theme-ghost-dark-mode) | [![version](https://badgen.net/npm/v/gatsby-theme-ghost-dark-mode)](https://www.npmjs.com/package/gatsby-theme-ghost-dark-mode) | Dark mode toggle 🌗 |
+| [`gatsby-rehype-ghost-links`](https://github.com/styxlab/gatsby-theme-try-ghost/tree/master/packages/gatsby-rehype-ghost-links) | [![version](https://badgen.net/npm/v/gatsby-rehype-ghost-links)](https://www.npmjs.com/package/gatsby-rehype-ghost-links) | Rewrite CMS links from absolute to relative |
+| [`gatsby-rehype-prismjs`](https://github.com/styxlab/gatsby-theme-try-ghost/tree/master/packages/gatsby-rehype-prismjs) | [![version](https://badgen.net/npm/v/gatsby-rehype-prismjs)](https://www.npmjs.com/package/gatsby-rehype-prismjs) | Syntax highlighting with [PrismJS](http://prismjs.com/) |
+| [`gatsby-theme-ghost-members`](https://github.com/styxlab/gatsby-theme-try-ghost/tree/master/packages/gatsby-theme-ghost-members) 🆕 | [![version](https://badgen.net/npm/v/gatsby-theme-ghost-members)](https://www.npmjs.com/package/gatsby-theme-ghost-members) | Member Subscriptions |
+
+
+If you don't need them, you can take them out in `gatsby-config.js` and `package.json` which may save you some time during the build process.
+
+&nbsp;
+
+## 🔥 More Plugins
+
+Additional features can be integrated by installing Gatsby themes or plugins. The following plugins have been tested to work with [`gatsby-starter-try-ghost`](https://github.com/styxlab/gatsby-starter-try-ghost):
+
+| Name | Version | Description |   
+| ---- | ------- | ----------- |
+| [`gatsby-rehype-inline-images`](https://github.com/styxlab/gatsby-theme-try-ghost/tree/master/packages/gatsby-rehype-inline-images) 🆕 | [![version](https://badgen.net/npm/v/gatsby-rehype-inline-images)](https://www.npmjs.com/package/gatsby-rehype-inline-images) | Lazy-loading inline images with blur-up |
+| [`gatsby-theme-ghost-contact`](https://github.com/styxlab/gatsby-theme-try-ghost/tree/master/packages/gatsby-theme-ghost-contact) | [![version](https://badgen.net/npm/v/gatsby-theme-ghost-contact)](https://www.npmjs.com/package/gatsby-theme-ghost-contact) | Contact page |
+| [`gatsby-theme-ghost-commento`](https://github.com/styxlab/gatsby-theme-try-ghost/tree/master/packages/gatsby-theme-ghost-commento) | [![version](https://badgen.net/npm/v/gatsby-theme-ghost-commento)](https://www.npmjs.com/package/gatsby-theme-ghost-commento) | Commenting system with [Commento](https://commento.io/) |
+| [`gatsby-theme-ghost-toc`](https://github.com/styxlab/gatsby-theme-try-ghost/tree/master/packages/gatsby-theme-ghost-toc) 🆕 | [![version](https://badgen.net/npm/v/gatsby-theme-ghost-toc)](https://www.npmjs.com/package/gatsby-theme-ghost-toc) | Table of Contents |
+| [`gatsby-plugin-ackee-tracker`](https://github.com/burnsy/gatsby-plugin-ackee-tracker) | [![version](https://badgen.net/npm/v/gatsby-plugin-ackee-tracker)](https://www.npmjs.com/package/gatsby-plugin-ackee-tracker) | Site tracking with [Ackee](https://github.com/electerious/Ackee) |
+| [`gatsby-plugin-google-analytics`](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-google-analytics) | [![version](https://badgen.net/npm/v/gatsby-plugin-google-analytics)](https://www.npmjs.com/package/gatsby-plugin-google-analytics) | Site tracking with [Google Analytics](https://developers.google.com/analytics) |
+
+&nbsp;
+
+## 🏁 Getting Started
+
+1. Install this starter by running
+
+    ```bash
+    gatsby new try-ghost https://github.com/styxlab/gatsby-starter-try-ghost
     ```
 
-1.  **Start developing.**
+2. Change directory
 
-    Navigate into your new site’s directory and start it up.
+    ```bash
+    cd try-ghost
+    ```
 
-    ```shell
-    cd my-default-starter/
+3. Run
+
+    ```bash
     gatsby develop
     ```
+    and visit your site at `http://localhost:8000`.
+    
+&nbsp;
 
-1.  **Open the source code and start editing!**
+## 💡 Configure
 
-    Your site is now running at `http://localhost:8000`!
+```js
+    //siteConfig.js
+    module.exports = {
+        // Do not include a trailing slash!
+        siteUrl: `https://your-blog.com`,
 
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
+        // Maximum number of post shown per page
+        // Infinite Scroll: Initial chunk of posts, subsequent posts are fetched one by one
+        postsPerPage: 3, 
+    
+        // This allows an alternative site title for meta data for pages.
+        siteTitleMeta: `Gatsby Starter Ghost CMS`, 
 
-    Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+        // This allows an site description for meta data for pages.
+        siteDescriptionMeta: `Turn your Ghost blog into a flaring fast static site with Gatsby`, 
+    
+        // Used for App and Offline manifest e.g. Mobile Home Screen
+        shortTitle: `Ghost`, 
+        siteIcon: `favicon.png`, 
+        backgroundColor: `#e9e9e9`,
+        themeColor: `#15171A`,
 
-## 🧐 What's inside?
+        // Include Gatsby images for lazy loading and image optimizations (default: true)
+        gatsbyImages: true,
 
-A quick look at the top-level files and directories you'll see in a Gatsby project.
+        // Overwrite navigation menu (default: []), label is case sensitive
+        // overwriteGhostNavigation: [{ label: `Home`, url: `/` }],
+    }
+```
 
-    .
-    ├── node_modules
-    ├── src
-    ├── .gitignore
-    ├── .prettierrc
-    ├── gatsby-browser.js
-    ├── gatsby-config.js
-    ├── gatsby-node.js
-    ├── gatsby-ssr.js
-    ├── LICENSE
-    ├── package-lock.json
-    ├── package.json
-    └── README.md
+In the configuration shown above, the most important fields to be changed are `siteUrl`, `siteTitleMeta` and `siteDescriptionMeta`. Update at least those to fit your needs.
 
-1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
+&nbsp;
 
-2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
+## 🔑 Ghost Content API keys
 
-3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
+All content is sourced from a Ghost CMS. By default, content is fetched from the demo location at `https://cms.gotsby.org`. Surely you want to source your own content. In your base directory `try-ghost`, add a new file `.ghost.json` that contains the following JSON structure:
 
-4.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
+```bash
 
-5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.org/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
+    {
+        "development": {
+            "apiUrl": "http://localhost:2368",
+            "contentApiKey": "9fccdb0e4ea5b572e2e5b92942"
+        },
+        "production": {
+            "apiUrl": "http://localhost:2368",
+            "contentApiKey": "9fccdb0e4ea5b572e2e5b92942"
+        }
+    }
+```
 
-6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.org/docs/gatsby-config/) for more detail).
+Change the url and keys to match your own Ghost CMS Content API keys.
 
-7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.org/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
+&nbsp;
 
-8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.org/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
+## 🤯 Ensure headless mode of Ghost CMS
 
-9.  **`LICENSE`**: This Gatsby starter is licensed under the 0BSD license. This means that you can see this file as a placeholder and replace it with your own license.
+For best SEO results it is strongly recommended to disable the default Ghost Handlebars theme front-end by selecting the *Make this site private* flag within your Ghost admin settings. This enables password protection in front of the Ghost install and sets `<meta name="robots" content="noindex" />` so your Gatsby front-end becomes the authoritative source for search engines.
 
-10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
-
-11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
-
-12. **`README.md`**: A text file containing useful reference information about your project.
-
-## 🎓 Learning Gatsby
-
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/). Here are some places to start:
-
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
-
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
+&nbsp;
 
 ## 💫 Deploy
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/styxlab/gatsby-starter-try-ghost)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/gatsbyjs/gatsby-starter-default)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/styxlab/gatsby-starter-try-ghost)
 
-<!-- AUTO-GENERATED-CONTENT:END -->
+&nbsp;
+
+## 💣 Reporting issues
+
+Please report all bugs and issues at [gatsby-theme-try-ghost/issues](https://github.com/styxlab/gatsby-theme-try-ghost/issues) as all development is happening there.
+
+&nbsp;
+
+## 🧐 Disclaimer
+
+This project is not affiliated with [`gatsby-starter-ghost`](https://github.com/TryGhost/gatsby-starter-ghost) or [Ghost](https://ghost.org/).
+
+&nbsp;
+
+# Copyright & License
+
+Copyright (c) 2020 styxlab - Released under the [MIT license](LICENSE).
