@@ -12,8 +12,8 @@ module.exports = {
     authorDescription:
       "A journey through the tortured past of the Minnesota Timberwolves.", // short text about the author
     avatar: "/avatar.jpg",
-    twitterSite: "", // website account on twitter
-    twitterCreator: "", // creator account on twitter
+    twitterSite: "https://twitter.com/howlhistory", // website account on twitter
+    twitterCreator: "https://twitter.com/rubioops", // creator account on twitter
     social: [
       {
         icon: `envelope`,
@@ -21,10 +21,10 @@ module.exports = {
       },
       {
         icon: `twitter`,
-        url: `https://twitter.com/ganevru`
+        url: `https://twitter.com/howlhistory`
       },
       {
-        icon: `github`,
+        icon: `instagram`,
         url: `https://github.com/Chronoblog/gatsby-theme-chronoblog`
       },
       {
